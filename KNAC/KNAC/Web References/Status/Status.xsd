@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="OurBank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Deposit" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Loan" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NonPayedInstallements" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayedInstallements" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OurBank" nillable="true" type="tns:OurBank" />
+  <xs:complexType name="ArrayOfTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Transaction" nillable="true" type="tns:Transaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransaction" nillable="true" type="tns:ArrayOfTransaction" />
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Direction" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transaction" nillable="true" type="tns:Transaction" />
+</xs:schema>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="InstallementsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.10:81/InstallementsService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.10:81/InstallementsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.10:81/InstallementsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInstallementsService_GetNonPayedInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonPayedInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetNonPayedInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonPayedInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetLoanInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoanInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetLoanInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoanInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_InsertInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_InsertInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_UpdateInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_UpdateInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_DeleteInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_DeleteInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_PayInstallement_InputMessage">
+    <wsdl:part name="parameters" element="tns:PayInstallement" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_PayInstallement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PayInstallementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetPeopleInstallements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeopleInstallements" />
+  </wsdl:message>
+  <wsdl:message name="IInstallementsService_GetPeopleInstallements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeopleInstallementsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInstallementsService">
+    <wsdl:operation name="GetNonPayedInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/GetNonPayedInstallements" message="tns:IInstallementsService_GetNonPayedInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/GetNonPayedInstallementsResponse" message="tns:IInstallementsService_GetNonPayedInstallements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/GetLoanInstallements" message="tns:IInstallementsService_GetLoanInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/GetLoanInstallementsResponse" message="tns:IInstallementsService_GetLoanInstallements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/GetInstallements" message="tns:IInstallementsService_GetInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/GetInstallementsResponse" message="tns:IInstallementsService_GetInstallements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/InsertInstallements" message="tns:IInstallementsService_InsertInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/InsertInstallementsResponse" message="tns:IInstallementsService_InsertInstallements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/UpdateInstallements" message="tns:IInstallementsService_UpdateInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/UpdateInstallementsResponse" message="tns:IInstallementsService_UpdateInstallements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/DeleteInstallements" message="tns:IInstallementsService_DeleteInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/DeleteInstallementsResponse" message="tns:IInstallementsService_DeleteInstallements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PayInstallement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/PayInstallement" message="tns:IInstallementsService_PayInstallement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/PayInstallementResponse" message="tns:IInstallementsService_PayInstallement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeopleInstallements">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInstallementsService/GetPeopleInstallements" message="tns:IInstallementsService_GetPeopleInstallements_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInstallementsService/GetPeopleInstallementsResponse" message="tns:IInstallementsService_GetPeopleInstallements_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IInstallementsService" type="tns:IInstallementsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNonPayedInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/GetNonPayedInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/GetLoanInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/GetInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/InsertInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/UpdateInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/DeleteInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayInstallement">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/PayInstallement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeopleInstallements">
+      <soap:operation soapAction="http://tempuri.org/IInstallementsService/GetPeopleInstallements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InstallementsService">
+    <wsdl:port name="BasicHttpBinding_IInstallementsService" binding="tns:BasicHttpBinding_IInstallementsService">
+      <soap:address location="http://192.168.0.10:81/InstallementsService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

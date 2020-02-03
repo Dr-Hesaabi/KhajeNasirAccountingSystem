@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ChequeService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.10:85/ChequeService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.10:85/ChequeService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.1.10:85/ChequeService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IChequeService_GetCheque_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCheque" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_GetCheque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChequeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_InsertCheque_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheque" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_InsertCheque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertChequeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_UpdateCheque_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCheque" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_UpdateCheque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateChequeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_DeleteCheque_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheque" />
+  </wsdl:message>
+  <wsdl:message name="IChequeService_DeleteCheque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteChequeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IChequeService">
+    <wsdl:operation name="GetCheque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IChequeService/GetCheque" message="tns:IChequeService_GetCheque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IChequeService/GetChequeResponse" message="tns:IChequeService_GetCheque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IChequeService/InsertCheque" message="tns:IChequeService_InsertCheque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IChequeService/InsertChequeResponse" message="tns:IChequeService_InsertCheque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCheque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IChequeService/UpdateCheque" message="tns:IChequeService_UpdateCheque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IChequeService/UpdateChequeResponse" message="tns:IChequeService_UpdateCheque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IChequeService/DeleteCheque" message="tns:IChequeService_DeleteCheque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IChequeService/DeleteChequeResponse" message="tns:IChequeService_DeleteCheque_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IChequeService" type="tns:IChequeService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCheque">
+      <soap:operation soapAction="http://tempuri.org/IChequeService/GetCheque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheque">
+      <soap:operation soapAction="http://tempuri.org/IChequeService/InsertCheque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCheque">
+      <soap:operation soapAction="http://tempuri.org/IChequeService/UpdateCheque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheque">
+      <soap:operation soapAction="http://tempuri.org/IChequeService/DeleteCheque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ChequeService">
+    <wsdl:port name="BasicHttpBinding_IChequeService" binding="tns:BasicHttpBinding_IChequeService">
+      <soap:address location="http://192.168.1.10:85/ChequeService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

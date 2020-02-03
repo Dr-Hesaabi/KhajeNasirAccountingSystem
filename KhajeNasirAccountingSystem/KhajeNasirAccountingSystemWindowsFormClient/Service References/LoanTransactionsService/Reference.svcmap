@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="579a4787-71e1-4933-ad6b-270f6d89b578" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.10:85/LoanTransactionsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoanTransactionsService11.disco" MetadataType="Disco" ID="72ebe5da-e94c-44eb-89d0-915f14648de5" SourceId="1" SourceUrl="http://192.168.1.10:85/LoanTransactionsService.svc?disco" />
+    <MetadataFile FileName="LoanTransactionsService11.wsdl" MetadataType="Wsdl" ID="8c27a975-6f6f-4d5e-aa1c-9848d9878dea" SourceId="1" SourceUrl="http://192.168.1.10:85/LoanTransactionsService.svc?wsdl" />
+    <MetadataFile FileName="LoanTransactionsService33.xsd" MetadataType="Schema" ID="3954037c-8e23-4a37-9849-b41bb2bfc9f7" SourceId="1" SourceUrl="http://192.168.1.10:85/LoanTransactionsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LoanTransactionsService34.xsd" MetadataType="Schema" ID="1d76f475-fba5-49ef-9779-6b39788e97fe" SourceId="1" SourceUrl="http://192.168.1.10:85/LoanTransactionsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LoanTransactionsService35.xsd" MetadataType="Schema" ID="3f5edb4e-53e9-4f40-90e8-f696900981ee" SourceId="1" SourceUrl="http://192.168.1.10:85/LoanTransactionsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

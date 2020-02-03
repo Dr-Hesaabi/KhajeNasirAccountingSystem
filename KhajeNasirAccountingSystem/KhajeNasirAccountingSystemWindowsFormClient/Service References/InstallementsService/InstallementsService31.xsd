@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.0.10:81/InstallementsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfInstallementsSelectCommandResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InstallementsSelectCommandResult" nillable="true" type="tns:InstallementsSelectCommandResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInstallementsSelectCommandResult" nillable="true" type="tns:ArrayOfInstallementsSelectCommandResult" />
+  <xs:complexType name="InstallementsSelectCommandResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsPayed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LoanTransactionId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PaymentDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InstallementsSelectCommandResult" nillable="true" type="tns:InstallementsSelectCommandResult" />
+  <xs:complexType name="ArrayOfView_Update1_PersonInstallement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Update1_PersonInstallement" nillable="true" type="tns:View_Update1_PersonInstallement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Update1_PersonInstallement" nillable="true" type="tns:ArrayOfView_Update1_PersonInstallement" />
+  <xs:complexType name="View_Update1_PersonInstallement">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InstallementId" type="ser:guid" />
+      <xs:element minOccurs="0" name="InstallementIsPayed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LoanId" type="ser:guid" />
+      <xs:element minOccurs="0" name="NationalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="View_Update1_PersonInstallement" nillable="true" type="tns:View_Update1_PersonInstallement" />
+</xs:schema>

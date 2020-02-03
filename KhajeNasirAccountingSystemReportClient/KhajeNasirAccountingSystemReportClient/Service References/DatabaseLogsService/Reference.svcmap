@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fbc621bc-d56f-4d6f-a896-d777dca3591b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.10:85/LogService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogService.wsdl" MetadataType="Wsdl" ID="bf6e5587-8b25-4b6e-9a5b-191dfe13c68f" SourceId="1" SourceUrl="http://192.168.1.10:85/LogService.svc?wsdl" />
+    <MetadataFile FileName="LogService2.xsd" MetadataType="Schema" ID="b334e0b8-2b2a-46d6-a5b3-e29bcba51eed" SourceId="1" SourceUrl="http://192.168.1.10:85/LogService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LogService.xsd" MetadataType="Schema" ID="9628d434-ba0c-42a6-a625-f4c86f634074" SourceId="1" SourceUrl="http://192.168.1.10:85/LogService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LogService1.xsd" MetadataType="Schema" ID="93e275df-0b23-4df1-a87f-81858b62e883" SourceId="1" SourceUrl="http://192.168.1.10:85/LogService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LogService.disco" MetadataType="Disco" ID="7b0c614c-bba2-480d-bce2-350ed2fa629c" SourceId="1" SourceUrl="http://192.168.1.10:85/LogService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

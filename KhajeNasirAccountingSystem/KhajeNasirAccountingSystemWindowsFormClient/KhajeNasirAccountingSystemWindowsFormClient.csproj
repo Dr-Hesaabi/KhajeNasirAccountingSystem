@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C294C75F-B9F4-466E-8F1A-0D0259E63344}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KhajeNasirAccountingSystemWindowsFormClient</RootNamespace>
+    <AssemblyName>KhajeNasirAccountingSystemWindowsFormClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KhajeNasirAccountingSystemReportClient">
+      <HintPath>..\..\KhajeNasirAccountingSystemReportClient\KhajeNasirAccountingSystemReportClient\bin\Debug\KhajeNasirAccountingSystemReportClient.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCustomerAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCustomerAE.Designer.cs">
+      <DependentUpon>AdminCustomerAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChanegePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChanegePassword.Designer.cs">
+      <DependentUpon>ChanegePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheque.Designer.cs">
+      <DependentUpon>Cheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChequeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChequeReportForm.Designer.cs">
+      <DependentUpon>ChequeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="DefaultPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCoustomer.Designer.cs">
+      <DependentUpon>DefaultPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCustomer.Designer.cs">
+      <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Default.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Default.Designer.cs">
+      <DependentUpon>Default.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepositeForAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositeForAll.Designer.cs">
+      <DependentUpon>DepositeForAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCheque.Designer.cs">
+      <DependentUpon>InsertCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertLoan.Designer.cs">
+      <DependentUpon>InsertLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Installments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Installments.Designer.cs">
+      <DependentUpon>Installments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallmentsAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallmentsAE.Designer.cs">
+      <DependentUpon>InstallmentsAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanForAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanForAll.Designer.cs">
+      <DependentUpon>LoanForAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayedInstallment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayedInstallment.Designer.cs">
+      <DependentUpon>PayedInstallment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentAndLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentAndLoan.Designer.cs">
+      <DependentUpon>PaymentAndLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceivedLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivedLoan.Designer.cs">
+      <DependentUpon>ReceivedLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportConnector.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\About\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ChequeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DepositTransactionsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InstallementsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LoanTransactionsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LogService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PeopleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Status\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCoustomer.resx">
+      <DependentUpon>DefaultPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCustomer.resx">
+      <DependentUpon>AdminCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCustomerAE.resx">
+      <DependentUpon>AdminCustomerAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChanegePassword.resx">
+      <DependentUpon>ChanegePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheque.resx">
+      <DependentUpon>Cheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChequeReport.rdlc" />
+    <EmbeddedResource Include="ChequeReportForm.resx">
+      <DependentUpon>ChequeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.resx">
+      <DependentUpon>Default.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositeForAll.resx">
+      <DependentUpon>DepositeForAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCheque.resx">
+      <DependentUpon>InsertCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertLoan.resx">
+      <DependentUpon>InsertLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Installments.resx">
+      <DependentUpon>Installments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallmentsAE.resx">
+      <DependentUpon>InstallmentsAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanForAll.resx">
+      <DependentUpon>LoanForAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayedInstallment.resx">
+      <DependentUpon>PayedInstallment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentAndLoan.resx">
+      <DependentUpon>PaymentAndLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReceivedLoan.resx">
+      <DependentUpon>ReceivedLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.ChequeService.ChequeSelectCommandResult.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.DatabaseLogsService.LogSet_SelectResult.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.DepositTransactionsService.DepositSelectCommandResult.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.DepositTransactionsService.View_Update1_PeopleDeposit.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.InstallemenetsService.InstallementsSelectCommandResult.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.InstallemenetsService.View_Update1_PersonInstallement.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.LoanTransactionsService.LoanSelectCommandResult.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.LoanTransactionsService.View_Update1_PeopleLoan.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.PeopleService.LoginDetails.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.PeopleService.PeopleSelectCommandResult.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.StatusService.OurBank.datasource" />
+    <None Include="Properties\DataSources\KhajeNasirAccountingSystemReportClient.StatusService.Transaction.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\About\About11.wsdl" />
+    <None Include="Service References\About\About22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\About\About23.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChequeService\ChequeService.wsdl" />
+    <None Include="Service References\ChequeService\ChequeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChequeService\ChequeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChequeService\ChequeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChequeService\KhajeNasirAccountingSystemWindowsFormClient.ChequeService.Cheque.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DepositTransactionsService\DepositTransactionsService11.wsdl" />
+    <None Include="Service References\DepositTransactionsService\DepositTransactionsService33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepositTransactionsService\DepositTransactionsService34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepositTransactionsService\DepositTransactionsService35.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepositTransactionsService\KhajeNasirAccountingSystemWindowsFormClient.DepositTransactionsService.DepositSelectCommandResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DepositTransactionsService\KhajeNasirAccountingSystemWindowsFormClient.DepositTransactionsService.View_Update1_PeopleDeposit.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InstallementsService\InstallementsService11.wsdl" />
+    <None Include="Service References\InstallementsService\InstallementsService33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InstallementsService\InstallementsService34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InstallementsService\InstallementsService35.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InstallementsService\KhajeNasirAccountingSystemWindowsFormClient.InstallementsService.InstallementsSelectCommandResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InstallementsService\KhajeNasirAccountingSystemWindowsFormClient.InstallementsService.View_Update1_PersonInstallement.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LoanTransactionsService\LoanTransactionsService11.wsdl" />
+    <None Include="Service References\LoanTransactionsService\LoanTransactionsService33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoanTransactionsService\LoanTransactionsService34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LoanTransactionsService\LoanTransactionsService35.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LogService\LogService1.wsdl" />
+    <None Include="Service References\LogService\LogService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LogService\LogService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LogService\LogService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PeopleService\PeopleService.wsdl" />
+    <None Include="Service References\PeopleService\PeopleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PeopleService\PeopleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PeopleService\PeopleService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Status\Status11.wsdl" />
+    <None Include="Service References\Status\Status33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Status\Status34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Status\Status35.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\About\" />
+    <WCFMetadataStorage Include="Service References\ChequeService\" />
+    <WCFMetadataStorage Include="Service References\DepositTransactionsService\" />
+    <WCFMetadataStorage Include="Service References\InstallementsService\" />
+    <WCFMetadataStorage Include="Service References\LoanTransactionsService\" />
+    <WCFMetadataStorage Include="Service References\LogService\" />
+    <WCFMetadataStorage Include="Service References\PeopleService\" />
+    <WCFMetadataStorage Include="Service References\Status\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepositTransactionsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepositTransactionsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepositTransactionsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InstallementsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InstallementsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InstallementsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LoanTransactionsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LoanTransactionsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LoanTransactionsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\About\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\About\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\About\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LogService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LogService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LogService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\About\About11.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepositTransactionsService\DepositTransactionsService11.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\InstallementsService\InstallementsService11.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LoanTransactionsService\LoanTransactionsService11.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LogService\LogService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\Status11.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PeopleService\PeopleService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PeopleService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PeopleService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PeopleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78373.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChequeService\ChequeService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChequeService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChequeService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChequeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7b8d0a7b-fb8c-48ba-a77a-7087e571eef1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.10:85/ChequeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ChequeService.disco" MetadataType="Disco" ID="2981b168-f1d1-4237-9db3-d250411786df" SourceId="1" SourceUrl="http://192.168.1.10:85/ChequeService.svc?disco" />
+    <MetadataFile FileName="ChequeService.wsdl" MetadataType="Wsdl" ID="4e95182c-5c60-4c8a-bc82-75af37bb6d72" SourceId="1" SourceUrl="http://192.168.1.10:85/ChequeService.svc?wsdl" />
+    <MetadataFile FileName="ChequeService.xsd" MetadataType="Schema" ID="1bfb6efb-a5c4-47f0-85c5-dd82ac2f46bf" SourceId="1" SourceUrl="http://192.168.1.10:85/ChequeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ChequeService1.xsd" MetadataType="Schema" ID="3c605db2-6c9a-4b63-8e34-5ba72b43078d" SourceId="1" SourceUrl="http://192.168.1.10:85/ChequeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ChequeService2.xsd" MetadataType="Schema" ID="972844c8-4bff-4ae7-bc30-1ab57baf1738" SourceId="1" SourceUrl="http://192.168.1.10:85/ChequeService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

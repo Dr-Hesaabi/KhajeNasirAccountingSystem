@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.1.10:85/PeopleService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" />
+  <xs:element name="GetPeople">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeopleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" minOccurs="0" name="GetPeopleResult" nillable="true" type="q1:ArrayOfPeopleSelectCommandResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPerson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NationalCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" minOccurs="0" name="GetPersonResult" nillable="true" type="q2:PeopleSelectCommandResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPeople">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NationalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FathersName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BirthCity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreateDateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPeopleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePeople">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NationalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FathersName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BirthCity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreateDateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePeopleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePeople">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Original_NationalCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePeopleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" minOccurs="0" name="LoginResult" nillable="true" type="q3:LoginDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

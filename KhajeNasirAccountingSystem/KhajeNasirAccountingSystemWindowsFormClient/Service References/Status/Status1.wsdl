@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Status" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.10:81/Status.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.10:81/Status.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.10:81/Status.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStatus_GetPersonBank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonBank" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_GetPersonBank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_GetPeopleBank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeopleBank" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_GetPeopleBank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeopleBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_GetTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_GetTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_IsActive_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsActive" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_IsActive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_SetActive_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetActive" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_SetActive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetActiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_LastLoginDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:LastLoginDate" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_LastLoginDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LastLoginDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_IncreaseDepositForAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:IncreaseDepositForAll" />
+  </wsdl:message>
+  <wsdl:message name="IStatus_IncreaseDepositForAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncreaseDepositForAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStatus">
+    <wsdl:operation name="GetPersonBank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/GetPersonBank" message="tns:IStatus_GetPersonBank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/GetPersonBankResponse" message="tns:IStatus_GetPersonBank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeopleBank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/GetPeopleBank" message="tns:IStatus_GetPeopleBank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/GetPeopleBankResponse" message="tns:IStatus_GetPeopleBank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/GetTransactions" message="tns:IStatus_GetTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/GetTransactionsResponse" message="tns:IStatus_GetTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsActive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/IsActive" message="tns:IStatus_IsActive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/IsActiveResponse" message="tns:IStatus_IsActive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetActive">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/SetActive" message="tns:IStatus_SetActive_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/SetActiveResponse" message="tns:IStatus_SetActive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LastLoginDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/LastLoginDate" message="tns:IStatus_LastLoginDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/LastLoginDateResponse" message="tns:IStatus_LastLoginDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IncreaseDepositForAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStatus/IncreaseDepositForAll" message="tns:IStatus_IncreaseDepositForAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStatus/IncreaseDepositForAllResponse" message="tns:IStatus_IncreaseDepositForAll_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IStatus" type="tns:IStatus">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPersonBank">
+      <soap:operation soapAction="http://tempuri.org/IStatus/GetPersonBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeopleBank">
+      <soap:operation soapAction="http://tempuri.org/IStatus/GetPeopleBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <soap:operation soapAction="http://tempuri.org/IStatus/GetTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsActive">
+      <soap:operation soapAction="http://tempuri.org/IStatus/IsActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetActive">
+      <soap:operation soapAction="http://tempuri.org/IStatus/SetActive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastLoginDate">
+      <soap:operation soapAction="http://tempuri.org/IStatus/LastLoginDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncreaseDepositForAll">
+      <soap:operation soapAction="http://tempuri.org/IStatus/IncreaseDepositForAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Status">
+    <wsdl:port name="BasicHttpBinding_IStatus" binding="tns:BasicHttpBinding_IStatus">
+      <soap:address location="http://192.168.0.10:81/Status.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

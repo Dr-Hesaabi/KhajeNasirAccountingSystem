@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="81be31c0-6bdf-4776-aa3a-61a93506a644" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.10:85/DepositTransactionsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DepositTransactionsService11.disco" MetadataType="Disco" ID="20d651ce-1f6a-4460-b5ca-f3fa2d97d8fe" SourceId="1" SourceUrl="http://192.168.1.10:85/DepositTransactionsService.svc?disco" />
+    <MetadataFile FileName="DepositTransactionsService11.wsdl" MetadataType="Wsdl" ID="7bdf373e-1a48-468e-a7af-905dd3cccfac" SourceId="1" SourceUrl="http://192.168.1.10:85/DepositTransactionsService.svc?wsdl" />
+    <MetadataFile FileName="DepositTransactionsService33.xsd" MetadataType="Schema" ID="b323f913-1839-4a34-9a8e-794e16c4567e" SourceId="1" SourceUrl="http://192.168.1.10:85/DepositTransactionsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DepositTransactionsService34.xsd" MetadataType="Schema" ID="4d284765-7033-4de0-a742-0016eb556344" SourceId="1" SourceUrl="http://192.168.1.10:85/DepositTransactionsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DepositTransactionsService35.xsd" MetadataType="Schema" ID="c9208696-5ddd-4a24-9286-60fb6dcc89cf" SourceId="1" SourceUrl="http://192.168.1.10:85/DepositTransactionsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

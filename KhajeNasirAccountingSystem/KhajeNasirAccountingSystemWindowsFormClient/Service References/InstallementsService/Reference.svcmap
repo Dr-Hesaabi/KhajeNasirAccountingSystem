@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8deda5bd-9c7c-417c-acc7-fb58b8d2c870" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.10:85/InstallementsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InstallementsService33.xsd" MetadataType="Schema" ID="9edee9d0-533e-4ee1-9c4e-db9933bde0b7" SourceId="1" SourceUrl="http://192.168.1.10:85/InstallementsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="InstallementsService11.disco" MetadataType="Disco" ID="07520707-252b-424f-a492-8c572d7d7fe7" SourceId="1" SourceUrl="http://192.168.1.10:85/InstallementsService.svc?disco" />
+    <MetadataFile FileName="InstallementsService34.xsd" MetadataType="Schema" ID="2285cc23-c888-4f59-9278-6e914d6b59a1" SourceId="1" SourceUrl="http://192.168.1.10:85/InstallementsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="InstallementsService35.xsd" MetadataType="Schema" ID="51bf9dbe-4aae-4770-898e-e0118eda253f" SourceId="1" SourceUrl="http://192.168.1.10:85/InstallementsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="InstallementsService11.wsdl" MetadataType="Wsdl" ID="c3c5f1ee-1a5e-49fa-b7ef-bfd71cabe05b" SourceId="1" SourceUrl="http://192.168.1.10:85/InstallementsService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

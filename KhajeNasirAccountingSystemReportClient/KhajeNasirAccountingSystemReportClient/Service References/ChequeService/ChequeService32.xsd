@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.1.10:85/ChequeService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfChequeSelectCommandResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChequeSelectCommandResult" nillable="true" type="tns:ChequeSelectCommandResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChequeSelectCommandResult" nillable="true" type="tns:ArrayOfChequeSelectCommandResult" />
+  <xs:complexType name="ChequeSelectCommandResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdminNationalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ConsecutiveNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IssuanceDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PayTo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChequeSelectCommandResult" nillable="true" type="tns:ChequeSelectCommandResult" />
+</xs:schema>

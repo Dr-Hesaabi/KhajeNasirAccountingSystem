@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="085c077a-c43e-4871-af4a-4ee0e1b2c88c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.10:85/Status.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Status.wsdl" MetadataType="Wsdl" ID="23671be0-d5ba-4863-b81d-d902d252ef5d" SourceId="1" SourceUrl="http://192.168.1.10:85/Status.svc?wsdl" />
+    <MetadataFile FileName="Status1.xsd" MetadataType="Schema" ID="0d889f84-9d43-4239-b322-152980bd370f" SourceId="1" SourceUrl="http://192.168.1.10:85/Status.svc?xsd=xsd2" />
+    <MetadataFile FileName="Status2.xsd" MetadataType="Schema" ID="097aeba1-43a8-46e2-be81-90cb455209f6" SourceId="1" SourceUrl="http://192.168.1.10:85/Status.svc?xsd=xsd1" />
+    <MetadataFile FileName="Status.disco" MetadataType="Disco" ID="cdde7227-7398-4767-a670-a30e0961b648" SourceId="1" SourceUrl="http://192.168.1.10:85/Status.svc?disco" />
+    <MetadataFile FileName="Status.xsd" MetadataType="Schema" ID="de5de51d-4c08-4de7-b8eb-7acd4d64b32b" SourceId="1" SourceUrl="http://192.168.1.10:85/Status.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

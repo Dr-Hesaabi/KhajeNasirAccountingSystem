@@ -1,0 +1,8 @@
+KNAC.First, KNAC;md5bab2d95f9443f9cd98d08f69d4ec47f9.First
+KNAC.First, KNAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5bab2d95f9443f9cd98d08f69d4ec47f9.First
+KNAC.First;md5bab2d95f9443f9cd98d08f69d4ec47f9.First
+knac.First;md5bab2d95f9443f9cd98d08f69d4ec47f9.First
+KNAC.MainActivity, KNAC;md5bab2d95f9443f9cd98d08f69d4ec47f9.MainActivity
+KNAC.MainActivity, KNAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5bab2d95f9443f9cd98d08f69d4ec47f9.MainActivity
+KNAC.MainActivity;md5bab2d95f9443f9cd98d08f69d4ec47f9.MainActivity
+knac.MainActivity;md5bab2d95f9443f9cd98d08f69d4ec47f9.MainActivity

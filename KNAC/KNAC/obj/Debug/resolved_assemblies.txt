@@ -1,0 +1,16 @@
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\KNAC.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\Mono.Android.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\mscorlib.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Core.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Data.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.EnterpriseServices.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Web.Services.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Xml.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Xml.Linq.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Runtime.Serialization.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Numerics.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\System.Transactions.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\Mono.Data.Tds.dll
+\\192.168.1.10\Khajenasir\KNAC\KNAC\obj\Debug\assemblies\Mono.Security.dll

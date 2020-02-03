@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DepositTransactionsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.10:81/DepositTransactionsService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.10:81/DepositTransactionsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.10:81/DepositTransactionsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KhajeNasirAccountingSystemWcfServiceApplication" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDepositTransactionsService_GetPeopleDepositTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeopleDepositTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_GetPeopleDepositTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeopleDepositTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_UnPermittedDepositTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnPermittedDepositTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_UnPermittedDepositTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnPermittedDepositTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_GetDepositTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepositTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_GetDepositTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepositTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_InsertDepositTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDepositTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_InsertDepositTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDepositTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_UpdateDepositTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepositTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_UpdateDepositTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepositTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_DeleteDepositTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepositTransactions" />
+  </wsdl:message>
+  <wsdl:message name="IDepositTransactionsService_DeleteDepositTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepositTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDepositTransactionsService">
+    <wsdl:operation name="GetPeopleDepositTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDepositTransactionsService/GetPeopleDepositTransactions" message="tns:IDepositTransactionsService_GetPeopleDepositTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDepositTransactionsService/GetPeopleDepositTransactionsResponse" message="tns:IDepositTransactionsService_GetPeopleDepositTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnPermittedDepositTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDepositTransactionsService/UnPermittedDepositTransactions" message="tns:IDepositTransactionsService_UnPermittedDepositTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDepositTransactionsService/UnPermittedDepositTransactionsResponse" message="tns:IDepositTransactionsService_UnPermittedDepositTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepositTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDepositTransactionsService/GetDepositTransactions" message="tns:IDepositTransactionsService_GetDepositTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDepositTransactionsService/GetDepositTransactionsResponse" message="tns:IDepositTransactionsService_GetDepositTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDepositTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDepositTransactionsService/InsertDepositTransactions" message="tns:IDepositTransactionsService_InsertDepositTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDepositTransactionsService/InsertDepositTransactionsResponse" message="tns:IDepositTransactionsService_InsertDepositTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepositTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDepositTransactionsService/UpdateDepositTransactions" message="tns:IDepositTransactionsService_UpdateDepositTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDepositTransactionsService/UpdateDepositTransactionsResponse" message="tns:IDepositTransactionsService_UpdateDepositTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepositTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDepositTransactionsService/DeleteDepositTransactions" message="tns:IDepositTransactionsService_DeleteDepositTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDepositTransactionsService/DeleteDepositTransactionsResponse" message="tns:IDepositTransactionsService_DeleteDepositTransactions_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDepositTransactionsService" type="tns:IDepositTransactionsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPeopleDepositTransactions">
+      <soap:operation soapAction="http://tempuri.org/IDepositTransactionsService/GetPeopleDepositTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnPermittedDepositTransactions">
+      <soap:operation soapAction="http://tempuri.org/IDepositTransactionsService/UnPermittedDepositTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepositTransactions">
+      <soap:operation soapAction="http://tempuri.org/IDepositTransactionsService/GetDepositTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDepositTransactions">
+      <soap:operation soapAction="http://tempuri.org/IDepositTransactionsService/InsertDepositTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepositTransactions">
+      <soap:operation soapAction="http://tempuri.org/IDepositTransactionsService/UpdateDepositTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepositTransactions">
+      <soap:operation soapAction="http://tempuri.org/IDepositTransactionsService/DeleteDepositTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DepositTransactionsService">
+    <wsdl:port name="BasicHttpBinding_IDepositTransactionsService" binding="tns:BasicHttpBinding_IDepositTransactionsService">
+      <soap:address location="http://192.168.0.10:81/DepositTransactionsService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
